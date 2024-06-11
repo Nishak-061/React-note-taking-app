@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.messenger-container {
+    position: fixed;  
+    bottom: 417px;
+}
+.messenger-textbox {
+    width: 1051px;
+    height: 190px;
+    background-color: #E8E8E8;
+    position: relative;
+    top: 416.5px;
+    text-align: center;
+   
+}
+
+.messenger-box::placeholder {
+ color: #9A9A9A;
+ font-size: 18px;
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ position: absolute;
+ top: 10%;
+ left: 10px;
+}
+
+.messenger-box {
+    width: 999px;
+    height: 150px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.submit-button {
+    position: absolute;
+    top: 130px;
+    left: 972px;
+    cursor: pointer;
+    font-size: 30px;
+    
+
+}
+
+.submit-button img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.submit-button.active img {
+    filter: none;
+    fill: blue;
+    
+}
+
+@media(max-width: 600px) {
+    .messenger-container {
+width: 100%;
+    }
+    .messenger-textbox {
+       width: 100%;
+    }
+
+    .messenger-box{
+        width: 91%;
+    }
+    
+}

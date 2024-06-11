@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.sidebar-container {
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+   
+}
+
+
+.sidebar-heading {
+  flex-shrink: 0; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  position: fixed;
+  top: 0;
+}
+
+.plus-button {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.plus-sign {
+    font-size: 33px;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+}
+
+.create-group {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    position: fixed;
+    top: 60px;
+    left: 80px;
+}
+
+.group-lists {
+   position: fixed;
+   top: 20%;
+   left: 2%;
+   height: calc(100vh - 20%); 
+   width: 288px; /* Adjust the width as needed */
+   overflow-y: auto;
+   overflow-x: hidden; /* Hide horizontal scroll */
+   scroll-behavior: smooth;
+}
+
+.group-lists::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.group-lists::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.group-lists::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.group-lists::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
+}
+
+.group-items {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.group-abbreviation {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    /* margin-right: 60px; */
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.group-name {
+  position: absolute;
+  top: 18px;
+  left: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+ @media (max-width: 600px) {
+  .sidebar-container {
+    width: 100%;
+    background-color: white;
+  }
+
+  .sidebar-heading {
+   position: fixed;
+   top: 0;
+   font-size: 40px;
+   margin-left: 20px;
+  }
+
+  .plus-button {
+    width: 300px;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+  }
+
+  .plus-sign {
+    position: fixed;
+    top: 60px;
+    left: 80px;
+  }
+
+  .create-group {
+    position: fixed;
+    top: 90px;
+    left: 130px;
+  }
+  .group-items {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px 50px;
+    position: relative;
+  }
+
+  .group-lists {
+    position: fixed;
+    font-size: 20px;
+    top: 23%;
+    left: 2%;
+    height: calc(100vh - 20%); 
+    width: 355px; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+ }
+
+ .group-lists::-webkit-scrollbar {
+  display: none;
+  width: 10px; /* Width of the scrollbar */
+}
+
+.group-lists::-webkit-scrollbar-track {
+  display: none;
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.group-lists::-webkit-scrollbar-thumb {
+  display: none;
+  background: #888; /* Color of the handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.group-lists::-webkit-scrollbar-thumb:hover {
+  display: none;
+  background: #555; /* Color of the handle on hover */
+}
+
+ .group-abbreviation {
+  font-size: 20px;
+ }
+
+ .group-name {
+  font-weight: 500;
+  margin-left: 30px;
+  
+}
+} 
